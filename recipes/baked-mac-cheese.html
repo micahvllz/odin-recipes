@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Karaage (Japanese Fried Chicken)</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<div class="recipe-card">
+		<p class="recipe-headline">
+			Recipe
+		</p>
+		<div class="recipe-header">
+			<img src="../images/baked-mac-cheese.jpg" class="recipe-image"
+				alt="Baked Mac and Cheese in a casserole dish, hot from the oven, with a serving spoon in it.">
+			<div class="recipe-entry-info">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<span class="recipe-rating-details">
+					4.96 from 85 votes
+				</span>
+				<h2 class="recipe-name">Baked Mac and Cheese</h2>
+				<div class="recipe-summary">
+					<em>This <strong>Baked Mac and Cheese</strong> recipe is totally gourmet with the addition of
+						crispy bacon and panko bread crumb topping. It will outshine any mac and cheese you've
+						tasted!</em>
+				</div>
+				<div class="buttons-container">
+					<div class="recipe-button">
+						<i class="bi bi-printer"></i> 
+						Print
+					</div>
+					<div class="recipe-button">
+						<i class="bi bi-pinterest"></i> 
+						Pin
+					</div>
+					<div class="recipe-button">
+						<i class="bi bi-star-fill"></i>
+						Rate
+					</div>
+				</div>
+				<div class="recipe-meta-info">
+					<div class="meta-column">
+						<div class="recipe-block">
+							<span class="recipe-details-label">Author </span>
+							<span class="recipe-details-value"><a>Micah Villaruz</a></span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Course </span>
+							<span class="recipe-details-value">Main Course, Side Dish</span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Cuisine </span>
+							<span class="recipe-details-value">American</span>
+						</div>
+					</div>
+					<div class="meta-column">
+						<div class="recipe-block">
+							<span class="recipe-details-label">Servings </span>
+							<span class="recipe-details-value">6</span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Calories </span>
+							<span class="recipe-details-value">478</span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Cost </span>
+							<span class="recipe-details-value">5</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="recipe-times-meal-plan">
+			<div class="recipe-details-container">
+				<div class="recipe-container">
+					<span class="recipe-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</span>
+					<span class="recipe-label">
+						Prep 15 mins
+					</span>
+				</div>
+				<div class="recipe-container">
+					<span class="recipe-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</span>
+					<span class="recipe-label">
+						Cook 40 mins
+					</span>
+				</div>
+				<div class="recipe-container">
+					<span class="recipe-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</span>
+					<span class="recipe-label recipe-total-label">
+						Total 55 mins
+					</span>
+				</div>
+			</div>
+			<a href="#" class="add-button">Add to Meal Plan</a>
+		</div>
+		<div class="section-wrap">
+			<div class="recipe-ingredients-container">
+				<h3 class="recipe-ingredients-header">
+					Ingredients
+					<div class="recipe-adjustable-servings">
+						<button id="servings-1" class="adjustable-servings toggle-active" aria-label="Adjust servings by 1x">1x</button>
+						<button id="servings-2" class="adjustable-servings">2x</button>
+						<button id="servings-3" class="adjustable-servings">3x</button>
+					</div>
+				</h3>
+				<ul class="recipe-ingredients">
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 pound elbow macaroni (about 1 ½ cups)">
+						<span>1/2 pound elbow macaroni (about 1 ½ cups)</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="6 slices bacon">
+						<span>6 slices bacon</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="2 Tablespoon butter">
+						<span">2 Tablespoon butter</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="2 Tablespoons all-purpose flour">
+						<span>2 Tablespoons all-purpose flour</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 1/2 cups milk">
+						<span>1 1/2 cups milk</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="3/4 cup half and half">
+						<span>3/4 cup half and half</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 1/2 teaspoons cornstarch">
+						<span>1 1/2 teaspoons cornstarch</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 teaspoons dijon mustard">
+						<span>1/2 teaspoons dijon mustard</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 1/2 teaspoons chicken bouillon paste, or bouillon powder">
+						<span>1 1/2 teaspoons chicken bouillon paste , or bouillon powder</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/4 teaspoon onion powder">
+						<span>1/4 teaspoon onion powder</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 teaspoon garlic powder">
+						<span>1/2 teaspoon garlic powder</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 teaspoon dried parsley flakes">
+						<span>1/2 teaspoon dried parsley flakes</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 teaspoon salt , or more to taste">
+						<span>1/2 teaspoon salt , or more to taste</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/4 teaspoon ground black pepper , or more to taste">
+						<span>1/4 teaspoon ground black pepper , or more to taste</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="2 cups freshly grated sharp cheddar cheese *">
+						<span class="recipe-ingredient-amount">2 cups freshly grated sharp cheddar cheese *</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 cup freshly grated parmesan cheese">
+						<span>1/2 cup freshly grated parmesan cheese</span>
+					</li>
+				</ul>
+				<h4 class="recipe-ingredient-group-name">
+					Breadcrumb topping:
+				</h4>
+				<ul class="recipe-ingredients">
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 cup Panko breadcrumbs , or regular breadcrumbs">
+						<span>1/2 cup Panko Breadcrumbs , or regular breadcrumbs</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 Tablespoon butter , melted">
+						<span>1 Tablespoon butter , melted</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1/2 Tablespoon olive oil">
+						<span>1/2 Tablespoon olive oil</span>
+					</li>
+				</ul>
+			</div>
+			<div class="recipe-instructions-container">
+				<h3 class="recipe-instructions-header">
+					Instructions
+				</h3>
+				<ol class="recipe-instructions">
+					<li class="recipe-instruction">
+						<strong>Boil Pasta</strong>
+						according to package instructions, just until al dente. Don't overcook! Strain (don't rinse) and
+						set aside.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Shred cheese</strong>
+						and set aside to allow to come to room temperature.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Preheat oven</strong>
+						to 350 degrees F. Lightly grease a 8x8 baking dish.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Cook bacon</strong>
+						in a large skillet over medium heat until crispy, about 5-7 minutes. Remove bacon to a plate
+						lined with paper towels. Remove some, but not all of the grease from the pan and chop/crumble
+						into pieces.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Make Cheese Sauce: </strong>
+						Add 1 tablespoon butter to the pan and then whisk in flour. Cook, stirring, for 2 minutes.
+						Reduce heat to low and gradually whisk in milk. Add the cornstarch to the half and half and
+						whisk until smooth. Gradually add it to skillet followed by mustard, chicken bullion, onion
+						powder, garlic, powder, parsley, salt and pepper. Cook sauce, stirring well, for a few more
+						minutes, just until it begins to slightly thicken. Remove from heat and stir in shredded cheddar
+						cheese. Taste and add additional seasonings, if needed.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Add</strong>
+						bacon (reserve a handful to top at the end), and cooked pasta and toss to evenly coat in sauce.
+						Pour mixture into 8x8" baking dish. Sprinkle parmesan cheese on top.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Breadcrumb topping:</strong>
+						Add panko, melted butter and olive oil to a skillet (or the saucepan used to cook the pasta).
+						Cook over medium-high heat, stirring constantly, until the crumbs are golden brown. Evenly
+						sprinkle over the mac cheese. Add remaining bacon crumbles on top.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Bake</strong>
+						15-20 minutes or until bubbly. Serve warm.
+					</li>
+				</ol>
+			</div>
+			<div class="recipe-notes-container">
+				<h3 class="recipe-notes-header">
+					Notes
+				</h3>
+				<div>
+					<span class="recipe-notes">
+						<strong>Cheese:</strong>
+						It's really best to freshly shred the cheese, rather than using store bought pre-shredded cheese
+						which contain preservatives and wont melt as well. You can play around with other cheeses
+						flavors, but make sure they are good melting cheeses like gruyere, gouda, Monterey jack,
+						havarti, muenster.
+					</span>
+					<span class="recipe-notes">
+						<strong>To Make Ahead:</strong>
+						You can make this creamy baked mac and cheese recipe 1-2 days ahead of time. Prepare the sauce,
+						cook the noodles, and store both separately in the fridge until ready to bake.
+					</span>
+					<span class="recipe-notes" >
+						<strong>To Freeze:</strong>
+						Make the entire dish, but freeze before baking. Allow it to cool completely in the 8x8 pan,
+						cover it well with plastic wrap and tinfoil and store it in the freezer for 2-3 months. Allow it
+						to thaw overnight in the refrigerator and bake until warmed through and the cheese is bubbly on
+						top.
+					</span>
+				</div>
+			</div>
+			<div class="recipe-nutrition-container">
+				<h3 class="recipe-nutrition-header">
+					Nutrition
+				</h3>
+				<div class="nutrition-label-text-container">
+				<span class="nutrition-label-text">
+					Calories: 478kcal
+				</span>
+				<span class="nutrition-label-text">
+					<span>Carbohydrates: 40g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Protein: 24g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Fat: 24g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Saturated Fat: 12g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Polyunsaturated Fat: 2g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Monounsaturated Fat: 9g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Trans Fat: 1g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Cholesterol: 56mg</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Sodium: 626mg</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Potassium: 304mg</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Fiber: 2g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Sugar: 5g</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Vitamin A: 443IU</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Vitamin C: 1mg</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Calcium: 372mg</span>
+				</span>
+				<span class="nutrition-label-text">
+					<span>Iron: 1mg</span>
+				</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="recipe-footer">
+		<a href="../../odin-recipes/index.html" class="back-button">Back to Main Page</a>
+	</div>
+</body>
+
+</html>

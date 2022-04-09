@@ -1,232 +1,503 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-    font-family: 'norsebold';
-    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
-        url('fonts/norse-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "norsebold";
+  src: url("fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("fonts/norse-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background: #fff;
-    font-family: 'Work Sans', sans-serif;
-    color: #323232;
-    margin: 0;
+  background: #fdeae1;
+  font-family: "Work Sans", sans-serif;
+  color: #323232;
+  margin: 0;
 }
 
 .brand {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    text-decoration: none;
-    white-space: nowrap;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .logo {
-    width: 20rem;
-    height: auto;
-    padding-left: 20px;
+  width: 20rem;
+  height: auto;
+  padding-left: 20px;
 }
 
 .navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    background:rgba(255, 249, 249, 0.884);
-    border: 1px solid rgb(196, 196, 196) !important;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 249, 249, 0.884);
+  border: 1px solid rgb(196, 196, 196) !important;
 }
 
 .menu {
-    display: flex;
-    gap: 45px
+  display: flex;
+  gap: 45px;
 }
 .menu-list {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .navbar-item {
-    color: #111;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: .5px;
-    text-transform: uppercase;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .icon {
-    font-size: 25px;
-    vertical-align: middle;
-    color: #ce973e;
+  font-size: 25px;
+  vertical-align: middle;
+  color: #ce973e;
 }
 
 .search {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .search-term {
-    width: 150px;
-    border: 3px solid #ce973e;
-    border-right: none;
-    padding: 5px;
-    height: 20px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #9DBFAF;
+  width: 150px;
+  border: 3px solid #ce973e;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
 }
 
-.search-term:focus{
-    color: #000;
+.search-term:focus {
+  color: #000;
 }
 
 .search-button {
-    width: 40px;
-    height: 36px;
-    border: 1px solid #ce973e;
-    background: #ce973e;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ce973e;
+  background: #ce973e;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.wrap{
-    top: 50%;
-    left: 50%;
+.wrap {
+  top: 50%;
+  left: 50%;
 }
 
 .title-head {
-    padding: 10px 220px;
-    font-family: Arial, sans-serif;
-    font-weight: 600;
-    color: black;
+  padding: 10px 220px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: black;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding: 0 50px 75px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0 50px 75px;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-    width: 460px;
-    height: 654px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
-    overflow: hidden;
-    top: 50%;
-    right: 50%;
-    bottom: 50%;
-    left: 50%;
+  width: 460px;
+  height: 654px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 88px 0 rgba(0, 0, 0, 0.1607843137254902);
+  overflow: hidden;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
 }
 
 .card-thumb {
-    position: relative;
-    height: 281px;
-    box-shadow: 0px 0px 130px 0 rgba(0, 0, 0, 0.38);
+  position: relative;
+  height: 281px;
+  box-shadow: 0px 0px 130px 0 rgba(0, 0, 0, 0.38);
 }
 
 .card-content {
-    flex: 1;
-    padding: 0 2em 1em;
+  flex: 1;
+  padding: 0 2em 1em;
 }
 
 .row-wrapper {
-    display: flex;
-    padding: .55em 0 .3em;
-    border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  padding: 0.55em 0 0.3em;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .recipe-title {
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .recipe-details {
-    display: flex;
-    list-style: none;
-    padding: 1.4em 0 1em;
-    margin: 0;
-    justify-content: space-between;
+  display: flex;
+  list-style: none;
+  padding: 1.4em 0 1em;
+  margin: 0;
+  justify-content: space-between;
 }
 
 .recipe-details-item {
-    flex: 1;
+  flex: 1;
 }
 
 ion-icon {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .value {
-    color: #ce973e;
-    margin-left: .35em;
-    vertical-align: bottom;
-    font-size: 24px;
-    font-weight: 600;
-    display: inline-block;
-    padding-bottom: 3px;
+  color: #ce973e;
+  margin-left: 0.35em;
+  vertical-align: bottom;
+  font-size: 24px;
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 3px;
 }
 
 .title {
-    display: block;
-    margin-top: -4px;
-    font-family: 'Jost', sans-serif;;
-    font-size: 21px;
-    font-weight: 300;
+  display: block;
+  margin-top: -4px;
+  font-family: "Jost", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
 }
 
 .description {
-    margin: .3em 0 1.8em;
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.5;
+  margin: 0.3em 0 1.8em;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
 }
 
 .content-footer {
-    text-align: center;
-    margin: 0 3rem;
+  text-align: center;
+  margin: 0 3rem;
 }
 
 .view-recipe {
-    font-family: 'Jost', sans-serif;
-    display: inline-block;
-    background: #ce973e;
-    padding: .45em 1em;
-    width: 100%;
-    text-align: center;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: .2px;
-    font-size: 17px;
+  font-family: "Jost", sans-serif;
+  display: inline-block;
+  background: #ce973e;
+  padding: 0.45em 1em;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  font-size: 17px;
+}
+
+.recipe-card {
+  padding: 20px 12px;
+  max-width: 856px;
+  margin: 0 auto;
+  color: #111;
+}
+
+.recipe-header {
+  display: flex;
+}
+
+.recipe-image {
+  width: 411px;
+  height: auto;
+}
+
+.recipe-headline {
+  color: #111;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-entry-info {
+  background: #fff;
+  padding: 32px;
+}
+
+.recipe-rating-details {
+  margin-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+.recipe-name {
+  font-size: 30px;
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.1;
+}
+
+.recipe-summary {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.buttons-container {
+  margin: 24px -8px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.recipe-button {
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 14px;
+  background-color: #f6a982;
+  padding: 13px 25px;
+  margin: 5px 8px;
+  width: 60px;
+  text-align: center;
+}
+
+.recipe-meta-info {
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.meta-column {
+  flex: 1;
+  font-weight: 700;
+}
+
+.recipe-block {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.recipe-details-label {
+  margin-right: 4px;
+  width: 100px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.recipe-details-value {
+  margin-right: 4px;
+  width: 50%;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.recipe-times-meal-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.recipe-details-container {
+  display: inline-block;
+}
+
+.recipe-container {
+  margin-right: 1.2em;
+  margin-bottom: 0;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.recipe-icon svg {
+  width: 24px;
+  height: 24px;
+  display: inline;
+  vertical-align: middle;
+  margin-top: 0.12em;
+}
+
+.recipe-label {
+  text-transform: uppercase;
+}
+
+.recipe-total-label {
+  font-weight: 700;
+}
+
+.add-button {
+  color: #111111;
+  background-color: #f6a982;
+  border-color: #f6a982;
+  padding: 18px 27px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.section-wrap {
+  background: #fff;
+  padding: 28px 0;
+}
+
+.recipe-ingredients-container,
+.recipe-instructions-container,
+.recipe-notes-container,
+.recipe-nutrition-container {
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 28px 0;
+  margin-top: 5px;
+}
+
+.recipe-ingredients-header,
+.recipe-instructions-header,
+.recipe-notes-header,
+.recipe-nutrition-header {
+  font-size: 27px;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-adjustable-servings {
+  display: inline-flex;
+}
+
+.adjustable-servings {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 0;
+  border: 1px solid #000000;
+}
+
+.adjustable-servings.toggle-active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#servings-1 {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+#servings-2 {
+  border-right: 0;
+}
+
+#servings-3 {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.recipe-ingredients {
+  padding-left: 0;
+}
+
+.recipe-ingredient {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+}
+
+.recipe-ingredient-group-name {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.recipe-instructions {
+  padding-left: 16px;
+}
+
+.recipe-instruction {
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.recipe-notes {
+  display: block;
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.nutrition-label-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.nutrition-label-text {
+  margin-bottom: 2px;
+  padding-right: 10px;
+  line-height: 1.5;
+  flex-basis: 185px;
+  font-size: 14px;
+}
+
+.recipe-footer {
+  padding: 64px 32px 48px;
+  text-align: center;
+}
+
+.back-button {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 500;
+  padding: 16px 24px;
 }

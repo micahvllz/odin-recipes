@@ -1,143 +1,202 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Odin Recipes</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <div>
-                <a href="index.html" class="brand">
-                    <img src="images/theOdinProject.png" alt="The Odin Project Logo" class="logo">
-                </a>
-            </div>
-            <div class="menu">
-                <div class="menu-list">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                        <path d="M17 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1zm5-16v22h-20v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h6v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 7h-16v13h16v-13zm-12-8c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm10 0c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2z"/>
-                    </svg>
-                    <a href="#" class="navbar-item">RECIPES</a>
-                </div>
-                <div class="menu-list">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="icon">
-                        <path d="M7.008 22.914c-4.134-1.896-7.008-6.072-7.008-10.914 0-6.623 5.377-12 12-12s12 5.377 12 12c0 4.439-2.415 8.318-6.002 10.394.002-5.398.004-12.809-.002-13.685-.003-.412-.3-.709-.673-.709-1.297 0-3.215 5.17-3.883 11 1.079-.003 2.056 0 2.056 0v4.482c-1.107.337-2.28.518-3.496.518-.852 0-1.683-.089-2.484-.258v-6.096c0-.585.36-.765 1.151-1.391.594-.47 1.016-1.212.935-1.963-.231-2.121-.793-6.292-.793-6.292h-.458v5h-.835l-.166-5h-.469l-.201 5h-.836l-.144-5h-.506l-.186 5h-.836v-5h-.5s-.509 4.198-.718 6.312c-.074.741.326 1.469.907 1.935.787.63 1.147.819 1.147 1.395v5.272z"/>
-                    </svg>
-                    <a href="#" class="navbar-item">MEAL PLANS</a>
-                </div>
-                <div class="menu-list">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="icon">
-                        <path d="M24 24h-22v-24h14v8h8v16zm-16-5h-3v4h3v-4zm5 0h-3v4h3v-4zm8 0h-3v4h3v-4zm-15-5h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm9 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-16-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm9 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-16-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2z"/>
-                    </svg>
-                    <a href="#" class="navbar-item">ABOUT</a>
-                </div>
-            </div>
-            <div class="wrap">
-                <div class="search">
-                    <input type="text" class="search-term" placeholder="Search">
-                    <button type="submit" class="search-button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <h1 class="title-head">Newest Recipes</h1>
-        <section class="cards">
-            <div class="card">
-                <div class="card-thumb">
-                    <img src="images/pancakes.jpg" alt="Stack of pancakes with melted butter, slathered with syrup">
-                </div>
-                <div class="card-content">
-                    <div class="row-wrapper">
-                        <h2 class="recipe-title">Good Old Fashioned Pancakes</h2>
-                    </div>
-                    <ul class="recipe-details">
-                        <li class="recipe-details-item">
-                            <ion-icon name="alarm-outline"></ion-icon>
-                            <span class="value">90</span>
-                            <span class="title">Minutes</span>
-                        </li>
-                        <li class="recipe-details-item">
-                            <ion-icon name="book-outline"></ion-icon>
-                            <span class="value">7</span>
-                            <span class="title">Ingredients</span>
-                        </li>
-                        <li class="recipe-details-item">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <span class="value">4-6</span>
-                            <span class="title">Serving</span>
-                        </li>
-                    </ul>
-                    <p class="description">This honey-glazed ham is coated with delicious brown sugar and sweet honey glaze! It is tender and juicy and goes with everything which makes it ideal for your holiday meal!</p>
-                    <footer class="content-footer">
-                        <a href="recipes/pancakes.html" class="view-recipe">View Recipe</a>
-                    </footer>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-thumb">
-                    <img src="images/chicken.jpg" alt="Karaage, a crispy, juicy, and crazy delicious Japanese fried chicken">
-                </div>
-                <div class="card-content">
-                    <div class="row-wrapper">
-                        <h2 class="recipe-title">Karaage (Japanese Fried Chicken)</h2>
-                    </div>
-                    <ul class="recipe-details">
-                        <li class="recipe-details-item">
-                            <ion-icon name="alarm-outline"></ion-icon>
-                            <span class="value">90</span>
-                            <span class="title">Minutes</span>
-                        </li>
-                        <li class="recipe-details-item">
-                            <ion-icon name="book-outline"></ion-icon>
-                            <span class="value">7</span>
-                            <span class="title">Ingredients</span>
-                        </li>
-                        <li class="recipe-details-item">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <span class="value">4-6</span>
-                            <span class="title">Serving</span>
-                        </li>
-                    </ul>
-                    <p class="description">This honey-glazed ham is coated with delicious brown sugar and sweet honey glaze! It is tender and juicy and goes with everything which makes it ideal for your holiday meal!</p>
-                    <footer class="content-footer">
-                        <a href="recipes/chicken.html" class="view-recipe">View Recipe</a>
-                    </footer>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-thumb">
-                    <img src="images/ham.jpg" alt="Tender, moist and perfectly sweet Honey Glazed Ham">
-                </div>
-                <div class="card-content">
-                    <div class="row-wrapper">
-                        <h2 class="recipe-title">Tangy Honey-Glazed Ham</h2>
-                    </div>
-                    <ul class="recipe-details">
-                        <li class="recipe-details-item">
-                            <ion-icon name="alarm-outline"></ion-icon>
-                            <span class="value">90</span>
-                            <span class="title">Minutes</span>
-                        </li>
-                        <li class="recipe-details-item">
-                            <ion-icon name="book-outline"></ion-icon>
-                            <span class="value">7</span>
-                            <span class="title">Ingredients</span>
-                        </li>
-                        <li class="recipe-details-item">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <span class="value">4-6</span>
-                            <span class="title">Serving</span>
-                        </li>
-                    </ul>
-                    <p class="description">This honey-glazed ham is coated with delicious brown sugar and sweet honey glaze! It is tender and juicy and goes with everything which makes it ideal for your holiday meal!</p>
-                    <footer class="content-footer">
-                        <a href="recipes/ham.html" class="view-recipe">View Recipe</a>
-                    </footer>
-                </div>
-            </div>
-        </section>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Odin Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <a href="index.html" class="brand">
+          <img
+            src="images/theOdinProject.png"
+            alt="The Odin Project Logo"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="menu">
+        <div class="menu-list">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="icon"
+          >
+            <path
+              d="M17 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1zm5-16v22h-20v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h6v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 7h-16v13h16v-13zm-12-8c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm10 0c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2z"
+            />
+          </svg>
+          <a href="#" class="navbar-item">RECIPES</a>
+        </div>
+        <div class="menu-list">
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="icon"
+          >
+            <path
+              d="M7.008 22.914c-4.134-1.896-7.008-6.072-7.008-10.914 0-6.623 5.377-12 12-12s12 5.377 12 12c0 4.439-2.415 8.318-6.002 10.394.002-5.398.004-12.809-.002-13.685-.003-.412-.3-.709-.673-.709-1.297 0-3.215 5.17-3.883 11 1.079-.003 2.056 0 2.056 0v4.482c-1.107.337-2.28.518-3.496.518-.852 0-1.683-.089-2.484-.258v-6.096c0-.585.36-.765 1.151-1.391.594-.47 1.016-1.212.935-1.963-.231-2.121-.793-6.292-.793-6.292h-.458v5h-.835l-.166-5h-.469l-.201 5h-.836l-.144-5h-.506l-.186 5h-.836v-5h-.5s-.509 4.198-.718 6.312c-.074.741.326 1.469.907 1.935.787.63 1.147.819 1.147 1.395v5.272z"
+            />
+          </svg>
+          <a href="#" class="navbar-item">MEAL PLANS</a>
+        </div>
+        <div class="menu-list">
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="icon"
+          >
+            <path
+              d="M24 24h-22v-24h14v8h8v16zm-16-5h-3v4h3v-4zm5 0h-3v4h3v-4zm8 0h-3v4h3v-4zm-15-5h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm9 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-16-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm9 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-16-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4-4h-2v2h2v-2zm8 0h-2v2h2v-2zm-4 0h-2v2h2v-2z"
+            />
+          </svg>
+          <a href="#" class="navbar-item">ABOUT</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="search-term" placeholder="Search" />
+          <button type="submit" class="search-button">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <h1 class="title-head">Newest Recipes</h1>
+    <section class="cards">
+      <div class="card">
+        <div class="card-thumb">
+          <img
+            src="images/pancakes.jpg"
+            alt="Stack of pancakes with melted butter, slathered with syrup"
+          />
+        </div>
+        <div class="card-content">
+          <div class="row-wrapper">
+            <h2 class="recipe-title">Good Old Fashioned Pancakes</h2>
+          </div>
+          <ul class="recipe-details">
+            <li class="recipe-details-item">
+              <ion-icon name="alarm-outline"></ion-icon>
+              <span class="value">90</span>
+              <span class="title">Minutes</span>
+            </li>
+            <li class="recipe-details-item">
+              <ion-icon name="book-outline"></ion-icon>
+              <span class="value">7</span>
+              <span class="title">Ingredients</span>
+            </li>
+            <li class="recipe-details-item">
+              <ion-icon name="person-outline"></ion-icon>
+              <span class="value">4-6</span>
+              <span class="title">Serving</span>
+            </li>
+          </ul>
+          <p class="description">
+            This honey-glazed ham is coated with delicious brown sugar and sweet
+            honey glaze! It is tender and juicy and goes with everything which
+            makes it ideal for your holiday meal!
+          </p>
+          <footer class="content-footer">
+            <a href="recipes/pancakes.html" class="view-recipe">View Recipe</a>
+          </footer>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-thumb">
+          <img
+            src="images/baked-mac-cheese.jpg"
+            alt="Baked Mac and Cheese in a casserole dish, hot from the oven, with a serving spoon in it."
+          />
+        </div>
+        <div class="card-content">
+          <div class="row-wrapper">
+            <h2 class="recipe-title">Baked Mac and Cheese</h2>
+          </div>
+          <ul class="recipe-details">
+            <li class="recipe-details-item">
+              <ion-icon name="alarm-outline"></ion-icon>
+              <span class="value">55</span>
+              <span class="title">Minutes</span>
+            </li>
+            <li class="recipe-details-item">
+              <ion-icon name="book-outline"></ion-icon>
+              <span class="value">19</span>
+              <span class="title">Ingredients</span>
+            </li>
+            <li class="recipe-details-item">
+              <ion-icon name="person-outline"></ion-icon>
+              <span class="value">6</span>
+              <span class="title">Serving</span>
+            </li>
+          </ul>
+          <p class="description">
+            This Baked Mac and Cheese recipe is totally gourmet with the
+            addition of crispy bacon and panko bread crumb topping. It will
+            outshine any mac and cheese you've tasted!
+          </p>
+          <footer class="content-footer">
+            <a href="recipes/baked-mac-cheese.html" class="view-recipe"
+              >View Recipe</a
+            >
+          </footer>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-thumb">
+          <img
+            src="images/ham.jpg"
+            alt="Tender, moist and perfectly sweet Honey Glazed Ham"
+          />
+        </div>
+        <div class="card-content">
+          <div class="row-wrapper">
+            <h2 class="recipe-title">Tangy Honey-Glazed Ham</h2>
+          </div>
+          <ul class="recipe-details">
+            <li class="recipe-details-item">
+              <ion-icon name="alarm-outline"></ion-icon>
+              <span class="value">90</span>
+              <span class="title">Minutes</span>
+            </li>
+            <li class="recipe-details-item">
+              <ion-icon name="book-outline"></ion-icon>
+              <span class="value">7</span>
+              <span class="title">Ingredients</span>
+            </li>
+            <li class="recipe-details-item">
+              <ion-icon name="person-outline"></ion-icon>
+              <span class="value">4-6</span>
+              <span class="title">Serving</span>
+            </li>
+          </ul>
+          <p class="description">
+            This honey-glazed ham is coated with delicious brown sugar and sweet
+            honey glaze! It is tender and juicy and goes with everything which
+            makes it ideal for your holiday meal!
+          </p>
+          <footer class="content-footer">
+            <a href="recipes/ham.html" class="view-recipe">View Recipe</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
 </html>
