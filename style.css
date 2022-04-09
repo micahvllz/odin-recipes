@@ -79,11 +79,16 @@ body {
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #000;
+  color: #fff;
+  background: #ce973e;
 }
 
 .search-term:focus {
-  color: #000;
+  color: #fff;
+}
+
+.search-term::placeholder {
+  color: #fff;
 }
 
 .search-button {
@@ -525,6 +530,11 @@ ion-icon {
   color: #000;
   font-weight: 500;
   padding: 16px 24px;
+}
+
+.back-button:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 .with-link {
