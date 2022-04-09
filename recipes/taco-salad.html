@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Taco Salad</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<div class="recipe-card">
+		<p class="recipe-headline">
+			Recipe
+		</p>
+		<div class="recipe-header">
+			<img src="../images/taco-salad.jpg" class="recipe-image"
+				alt="Taco salad served in a baked tortilla bowl, on a plate.">
+			<div class="recipe-entry-info">
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<span class="recipe-rating-details">
+					5 from 8 votes
+				</span>
+				<h2 class="recipe-name">Taco Salad</h2>
+				<div class="recipe-summary">
+					<em>This healthy <strong>Taco Salad</strong> recipe has seasoned ground beef, lettuce, beans, corn, and all of your favorite toppings served in a crunchy tortilla bowl, and ready in less than 30 minutes.</em>
+				</div>
+				<div class="buttons-container">
+					<div class="recipe-button">
+						<i class="bi bi-printer"></i> 
+						Print
+					</div>
+					<div class="recipe-button">
+						<i class="bi bi-pinterest"></i> 
+						Pin
+					</div>
+					<div class="recipe-button">
+						<i class="bi bi-star-fill"></i>
+						Rate
+					</div>
+				</div>
+				<div class="recipe-meta-info">
+					<div class="meta-column">
+						<div class="recipe-block">
+							<span class="recipe-details-label">Author </span>
+							<span class="recipe-details-value"><a>Micah Villaruz</a></span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Course </span>
+							<span class="recipe-details-value">Main Course</span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Cuisine </span>
+							<span class="recipe-details-value">American</span>
+						</div>
+					</div>
+					<div class="meta-column">
+						<div class="recipe-block">
+							<span class="recipe-details-label">Servings </span>
+							<span class="recipe-details-value">6</span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Calories </span>
+							<span class="recipe-details-value">293</span>
+						</div>
+						<div class="recipe-block">
+							<span class="recipe-details-label">Cost </span>
+							<span class="recipe-details-value">6</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="recipe-times-meal-plan">
+			<div class="recipe-details-container">
+				<div class="recipe-container">
+					<span class="recipe-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</span>
+					<span class="recipe-label">
+						Prep 15 mins
+					</span>
+				</div>
+				<div class="recipe-container">
+					<span class="recipe-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</span>
+					<span class="recipe-label">
+						Cook 10 mins
+					</span>
+				</div>
+				<div class="recipe-container">
+					<span class="recipe-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"></circle>
+							<polyline points="12 6 12 12 16 14"></polyline>
+						</svg>
+					</span>
+					<span class="recipe-label recipe-total-label">
+						Total 25 mins
+					</span>
+				</div>
+			</div>
+			<a href="#" class="add-button">Add to Meal Plan</a>
+		</div>
+		<div class="section-wrap">
+			<div class="recipe-ingredients-container">
+				<h3 class="recipe-ingredients-header">
+					Ingredients
+					<div class="recipe-adjustable-buttons">
+						<button id="us-customary" class="unit-conversion toggle-active" aria-label="Change unit system to US Customary">US Customary</button>
+						<button id="metric" class="unit-conversion" aria-label="Change unit system to Metric">Metric</button>
+						&nbsp; &nbsp;
+						<button id="servings-1" class="adjustable-servings toggle-active" aria-label="Adjust servings by 1x">1x</button>
+						<button id="servings-2" class="adjustable-servings" aria-label="Adjust servings by 2x">2x</button>
+						<button id="servings-3" class="adjustable-servings" aria-label="Adjust servings by 3x">3x</button>
+					</div>
+				</h3>
+				<ul class="recipe-ingredients">
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 lb lean ground beef , or ground turkey">
+						<span>1 lb lean ground beef , or ground turkey</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="2 Tablespoons Taco seasoning , or 1 packet">
+						<span>2 Tablespoons <a href="https://tastesbetterfromscratch.com/taco-seasoning/" target="_blank" class="with-link">Taco seasoning</a>, or 1 packet</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="½ cup water">
+						<span">½ cup water</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 can black beans , drained and rinsed">
+						<span>1 can black beans , drained and rinsed</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 cup corn (canned or frozen)">
+						<span>1 cup corn (canned or frozen)</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="1 head romaine lettuce , chopped">
+						<span>1 head romaine lettuce , chopped</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="6 (8 inch) flour tortillas , or 1 bag tortilla chips">
+						<span>6 (8 inch) flour tortillas , or 1 bag tortilla chips</span>
+					</li>
+				</ul>
+                <h4 class="recipe-ingredient-group-name">
+					Topping options:
+				</h4>
+				<ul class="recipe-ingredients">
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="2 cups cherry tomatoes , halved">
+						<span>2 cups cherry tomatoes , halved</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="½ cup Sliced Olives">
+						<span>½ cup Sliced Olives</span>
+					</li>
+					<li class="recipe-ingredient">
+						<input type="checkbox" aria-label="½ cup shredded cheese">
+						<span>½ cup shredded cheese</span>
+					</li>
+                    <li class="recipe-ingredient">
+						<input type="checkbox" aria-label="¼ cup chopped red or green onion">
+						<span>¼ cup chopped red or green onion</span>
+					</li>
+                    <li class="recipe-ingredient">
+						<input type="checkbox" aria-label="½ cup chopped cilantro">
+						<span>½ cup chopped cilantro</span>
+					</li>
+                    <li class="recipe-ingredient">
+						<input type="checkbox" aria-label="Salsa">
+						<span><a href="https://tastesbetterfromscratch.com/best-five-minute-salsa" target="_blank" class="with-link">Salsa</a></span>
+					</li>
+                    <li class="recipe-ingredient">
+						<input type="checkbox" aria-label="Sour Cream">
+						<span>Sour Cream</span>
+					</li>
+                    <li class="recipe-ingredient">
+						<input type="checkbox" aria-label="Guacamole , or chopped avocado">
+						<span>Guacamole , or chopped avocado</span>
+					</li>
+				</ul>
+			</div>
+			<div class="recipe-instructions-container">
+				<h3 class="recipe-instructions-header">
+					Instructions
+				</h3>
+				<ol class="recipe-instructions">
+					<li class="recipe-instruction">
+						Add ground beef to a skillet over medium heat. Cook, crumbling with a wooden spoon into small pieces, until cooked through. Remove grease. Add taco seasoning and water and cook for 5 minutes. Stir in black beans and corn.
+					</li>
+					<li class="recipe-instruction">
+						<strong>Assemble</strong>: Add baked tortilla shell (recipe follows) or tortilla chips to the bottom of a shallow bowl. Top with a handful of lettuce, then taco meat and desired toppings. Add salsa, sour cream and guacamole (or avocado) on top.
+					</li>
+                </ol>
+                <h4 class="recipe-instruction-group-name">
+					Baked Tortilla Bowl:
+				</h4>
+                <ol class="recipe-instructions">
+					<li class="recipe-instruction">
+						Brush a thin layer of canola or vegetable oil on both sides of 8” flour tortillas. Place a 4" ramekin or similar size oven-safe bowl, <em>face down</em>, on a cookie sheet. Lay a tortilla over it. Place a piece of heavy-duty aluminum foil on top of the tortilla and press down, scrunching the foil and tortilla around the ramekin until it's shaped like a tortilla bowl (think basket-style coffee filter). 
+					</li>
+					<li class="recipe-instruction">
+						Now flip the whole thing over so it's open end up. Repeat for however many tortilla bowls you're going to need (and an extra or two in case one breaks!).
+					</li>
+					<li class="recipe-instruction">
+						Preheat oven to 375 degrees and bake for 5 minutes. Take cookie sheet out of oven, use tongs to carefully remove each ramekin and then return the tray to the oven to cook for 5 more minutes.
+					</li>
+					<li class="recipe-instruction">
+						Remove from oven, carefully lift each shell out of the foil and place <em>bottom up, foil down</em> on the cookie sheet. Gently secure the rim of the tortilla inside the foil so it doesn't burn. Return to oven to cook for 7-10 more minutes or until crisp and golden.
+					</li>
+				</ol>
+			</div>
+			<div class="recipe-notes-container">
+				<h3 class="recipe-notes-header">
+					Notes
+				</h3>
+				<div>
+					<span class="recipe-notes">
+						<strong>Make Ahead Instructions:</strong>
+						Everything can be prepped a day or two in advance. Reheat the meat mixture in the microwave or in a skillet, and serve hot.
+					</span>
+					<span class="recipe-notes">
+						<strong>Freezing Instructions:</strong>
+						Allow meat mixture to cool completely and store in freezer safe bag in the freezer for up to 3 months. Thaw in the refrigerator overnight and reheat on the stove or in the microwave.
+					</span>
+					<span class="recipe-notes" >
+						<strong>Vegetarian:</strong>
+						Sub crumbled tofu or add additional beans or veggies.
+					</span>
+                    <span class="recipe-notes" >
+						<strong>Vegan:</strong>
+						Substitute <a href="https://amzn.to/2MfcT80" target="_blank" class="with-link">vegan cheese</a> and crumbled tofu.
+					</span>
+                    <span class="recipe-notes" >
+						<strong>Keto/low-carb:</strong>
+						Skip the shell and try out this <a href="https://www.gnom-gnom.com/keto-taco-bowls/" target="_blank" class="with-link">keto / gluten-free Tortilla bowls</a> recipe.
+					</span>
+				</div>
+			</div>
+			<div class="recipe-nutrition-container">
+				<h3 class="recipe-nutrition-header">
+					Nutrition
+				</h3>
+				<div class="nutrition-label-text-container">
+				<span class="nutrition-label-text">
+					Calories: 293kcal
+				</span>
+				<span class="nutrition-label-text">
+					Carbohydrates: 28g
+				</span>
+				<span class="nutrition-label-text">
+					Protein: 24g
+				</span>
+				<span class="nutrition-label-text">
+					Fat: 10g
+				</span>
+				<span class="nutrition-label-text">
+					Saturated Fat: 4g
+				</span>
+				<span class="nutrition-label-text">
+					Cholesterol: 54mg
+				</span>
+				<span class="nutrition-label-text">
+					Sodium: 573mg
+				</span>
+				<span class="nutrition-label-text">
+					Potassium: 755mg
+				</span>
+				<span class="nutrition-label-text">
+					Fiber: 4g
+				</span>
+				<span class="nutrition-label-text">
+					Sugar: 5g
+				</span>
+				<span class="nutrition-label-text">
+					Vitamin A: 9715IU
+				</span>
+				<span class="nutrition-label-text">
+					Vitamin C: 18mg
+				</span>
+				<span class="nutrition-label-text">
+					Calcium: 134mg
+				</span>
+				<span class="nutrition-label-text">
+					Iron: 4mg
+				</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="recipe-footer">
+		<a href="../../odin-recipes/index.html" class="back-button">Back to Main Page</a>
+	</div>
+</body>
+
+</html>

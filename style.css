@@ -79,7 +79,7 @@ body {
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9dbfaf;
+  color: #000;
 }
 
 .search-term:focus {
@@ -105,7 +105,7 @@ body {
 
 .title-head {
   padding: 10px 220px;
-  font-family: Arial, sans-serif;
+  font-family: "Merriweather", Georgia, serif;
   font-weight: 600;
   color: black;
 }
@@ -138,6 +138,7 @@ img {
   right: 50%;
   bottom: 50%;
   left: 50%;
+  border-radius: 1rem;
 }
 
 .card-thumb {
@@ -176,11 +177,11 @@ a:active {
   list-style: none;
   padding: 1.4em 0 1em;
   margin: 0;
-  justify-content: space-between;
 }
 
 .recipe-details-item {
-  flex: 1;
+  flex: 1 0 160px;
+  justify-content: space-between;
 }
 
 ion-icon {
@@ -212,7 +213,7 @@ ion-icon {
 }
 
 .content-footer {
-  text-align: center;
+  display: flex;
   margin: 0 3rem;
 }
 
@@ -228,6 +229,7 @@ ion-icon {
   font-weight: 500;
   letter-spacing: 0.2px;
   font-size: 17px;
+  justify-content: center;
 }
 
 .recipe-card {
@@ -294,7 +296,7 @@ ion-icon {
   display: inline-block;
   letter-spacing: 1px;
   font-size: 14px;
-  background-color: #f6a982;
+  background-color: #ce973e;
   padding: 13px 25px;
   margin: 5px 8px;
   width: 60px;
@@ -376,8 +378,8 @@ ion-icon {
 
 .add-button {
   color: #111111;
-  background-color: #f6a982;
-  border-color: #f6a982;
+  background-color: #ce973e;
+  border-color: #ce973e;
   padding: 18px 27px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -411,8 +413,30 @@ ion-icon {
   justify-content: space-between;
 }
 
-.recipe-adjustable-servings {
+.recipe-adjustable-buttons {
   display: inline-flex;
+}
+
+.unit-conversion {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  min-width: 44px;
+  border-radius: 0;
+  border: 1px solid #000000;
+}
+
+.unit-conversion.toggle-active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#us-customary {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+#metric {
+  border-radius: 0 0.25rem 0.25rem 0;
 }
 
 .adjustable-servings {
@@ -451,7 +475,8 @@ ion-icon {
   padding-bottom: 0.5rem;
 }
 
-.recipe-ingredient-group-name {
+.recipe-ingredient-group-name,
+.recipe-instruction-group-name {
   margin: 0;
   opacity: 0.6;
   font-size: 24px;
@@ -500,4 +525,9 @@ ion-icon {
   color: #000;
   font-weight: 500;
   padding: 16px 24px;
+}
+
+.with-link {
+  color: #4d6769;
+  text-decoration: underline;
 }
